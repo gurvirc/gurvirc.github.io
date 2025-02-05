@@ -52,4 +52,13 @@ body {
     color: #00abf0;
 }
 
+.home {
+    display: flex;
+    height:70vh;/*element takes up 100% of viewport heigh*/
+    align-items:center ;/*elements ceters itself vertically in viewport height*/
+    justify-content: flex-end;
+    padding-right: 12%;
+}
+
+
 
