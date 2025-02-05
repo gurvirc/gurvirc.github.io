@@ -29,5 +29,17 @@ body {
     color: #ededed; 
     text-decoration: none;/*gets rid of underline*/
     font-weight: 600;/*extra bold*/
-    
+
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;/*35px margin to the left of each element*/
+}
+
+.navbar a:hover {
+    color: #00abf0;
 }
