@@ -7,7 +7,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
+h1 {
+    font-size: xx-large;
+    
+}
+
 body {
+    color: #ededed;
     background: #000001;
 }
 
@@ -19,8 +25,8 @@ body {
     padding: 20px 10%;/*20px top and bottom and 10% of width on sides*/
     background: transparent;
     display: flex;/*spaces out content in different containers*/
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between;/* Centers content horizontally */
+    align-items: center;/* Centers content vertically */
     z-index: 100;
 }
 
@@ -45,3 +51,5 @@ body {
 .navbar a.active {
     color: #00abf0;
 }
+
+
