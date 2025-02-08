@@ -75,6 +75,17 @@ body {
     gap: 20%; /* Space between columns */
   }
 
-  
-  
+  .home-sci {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+  }
 
+  .home-sci a {
+    color: white;
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 35px;
+    
+    
+  }
