@@ -64,7 +64,7 @@ body {
 .home {
     display: flex;
     height:70vh;/*element takes up 100% of viewport heigh*/
-    align-items:center ;/*elements ceters itself vertically in viewport height*/
+    align-items:center ;/*elements centers itself vertically in viewport height*/
     justify-content: flex-end;
     padding-right: 12%;
 }
@@ -74,5 +74,26 @@ body {
     grid-template-columns: auto auto;
     gap: 20%; /* Space between columns */
   }
-  
 
+  .home-sci {
+    display: flex;/*puts logos side by side instead of stacked on eachother*/
+    justify-content: space-between;
+    padding-left: 150%;
+    transform: translateY(-340px)
+    
+    
+  }
+
+  .home-sci a {
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    margin-right: 20px;
+  } 
+    
+  
+.home-sci a:hover,
+.home-sci a.active {
+    color: #00abf0;
+    transition: .5s;
+}
