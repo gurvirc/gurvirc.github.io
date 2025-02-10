@@ -63,10 +63,11 @@ body {
 
 .home {
     display: flex;
-    height:70vh;/*element takes up 100% of viewport heigh*/
+    height:70vh;/*element takes up 100% of viewport height*/
     align-items:center ;/*elements centers itself vertically in viewport height*/
     justify-content: flex-end;
     padding-right: 12%;
+    
 }
 
 .container {
@@ -96,4 +97,27 @@ body {
 .home-sci a.active {
     color: #00abf0;
     transition: .5s;
+}
+
+#profile-pic {
+    height:auto; /* maintains aspect ration*/
+    width:300px;
+    padding-top: 50px;
+    padding-left: 30px;
+    justify-content: flex-start;
+}
+
+.home2 {
+    display: flex;
+    align-items:center ;/*elements centers itself vertically in viewport height*/
+    justify-content: space-between;
+    padding-right: 12%;
+    
+}
+
+.me-content {
+    height:100vh;
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-left: 10%;
 }
