@@ -109,7 +109,6 @@ body {
 
 .home2 {
     display: flex;
-    padding-top: 5%;
     align-items:center ;/*elements centers itself vertically in viewport height*/
     justify-content: space-between;
     padding-right: 12%;
