@@ -244,3 +244,8 @@ body {
 
     
 }
+.hobbies ul li {
+    margin-bottom: 10px; /* Adds spacing between items */
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+  }
