@@ -204,3 +204,23 @@ body {
     padding-right: 400px;
     width: 140%;
 }
+
+.hobbies h1{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 25%;
+    transform: translateY(-395px)
+    
+}
+
+
+.hobbies p{
+    padding-right: 3%;
+    justify-content: flex-end;
+    padding-left: 45%;
+    transform: translateY(-395px)
+
+    
+    
+
+}
