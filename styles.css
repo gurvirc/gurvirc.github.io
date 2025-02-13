@@ -209,18 +209,38 @@ body {
     display: flex;
     justify-content: flex-end;
     padding-right: 25%;
-    transform: translateY(-395px)
+    transform: translateY(-400px)
     
 }
 
 
 .hobbies p{
-    padding-right: 3%;
+    padding-right: 10%;
     justify-content: flex-end;
     padding-left: 45%;
     transform: translateY(-395px)
+    
+}
+
+.hobbies video{
+    float: inline-end;
+    padding-right: 30px;
+    transform: translateY(-360px) 
+    
+}
+
+.hobbies h2{
+    float: right;
+    margin-right:36% ;
+    transform: translateY(-370px) 
+    
+}
+
+.hobbies ul{
+    width: 200vh;
+    margin-left: 100vh;
+    transform: translateY(-550px)
+    
 
     
-    
-
 }
