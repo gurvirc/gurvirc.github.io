@@ -204,3 +204,48 @@ body {
     padding-right: 400px;
     width: 140%;
 }
+
+.hobbies h1{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 25%;
+    transform: translateY(-400px)
+    
+}
+
+
+.hobbies p{
+    padding-right: 10%;
+    justify-content: flex-end;
+    padding-left: 45%;
+    transform: translateY(-395px)
+    
+}
+
+.hobbies video{
+    float: inline-end;
+    padding-right: 30px;
+    transform: translateY(-360px) 
+    
+}
+
+.hobbies h2{
+    float: right;
+    margin-right:36% ;
+    transform: translateY(-370px) 
+    
+}
+
+.hobbies ul{
+    width: 200vh;
+    margin-left: 100vh;
+    transform: translateY(-550px)
+    
+
+    
+}
+.hobbies ul li {
+    margin-bottom: 10px; /* Adds spacing between items */
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+  }
