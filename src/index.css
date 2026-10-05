@@ -3,27 +3,6 @@
 
 /* ── DARK MODE (default) ── */
 :root {
-  --bg: #000000;
-  --bg-header: #000000;
-  --bg-card: linear-gradient(145deg, #0e0303, #160808);
-  --border-card: #2a0808;
-  --text-primary: #ffffff;
-  --text-muted: #886655;
-  --text-heading: #e8d8b0;
-  --accent: #cc2200;
-  --accent-bright: #ff2200;
-  --accent-dim: #7a0000;
-  --accent-border: #440a0a;
-  --shadow-header: 0 4px 20px rgba(200, 0, 0, 0.5);
-  --shadow-card: -4px 0 12px rgba(200, 0, 0, 0.3);
-  --heading-shadow:
-    0 0 8px rgba(200, 30, 0, 0.4),
-    0 2px 20px rgba(150, 20, 0, 0.2);
-  --particle-color: #ff3300;
-}
-
-/* ── LIGHT MODE ── */
-:root.light {
   --bg: #ffffff;
   --bg-header: #ffffff;
   --bg-card: #ffffff;
@@ -40,6 +19,29 @@
   --heading-shadow:
     0 0 8px rgba(200, 30, 0, 0.2),
     0 2px 20px rgba(150, 20, 0, 0.1);
+  --particle-color: #ff3300;
+
+
+}
+
+/* ── LIGHT MODE ── */
+:root.light {
+  --bg: #000000;
+  --bg-header: #000000;
+  --bg-card: linear-gradient(145deg, #0e0303, #160808);
+  --border-card: #2a0808;
+  --text-primary: #ffffff;
+  --text-muted: #886655;
+  --text-heading: #e8d8b0;
+  --accent: #cc2200;
+  --accent-bright: #ff2200;
+  --accent-dim: #7a0000;
+  --accent-border: #440a0a;
+  --shadow-header: 0 4px 20px rgba(200, 0, 0, 0.5);
+  --shadow-card: -4px 0 12px rgba(200, 0, 0, 0.3);
+  --heading-shadow:
+    0 0 8px rgba(200, 30, 0, 0.4),
+    0 2px 20px rgba(150, 20, 0, 0.2);
   --particle-color: #ff3300;
 }
 
@@ -484,6 +486,7 @@ img {
     height: auto;
     width: 50%;
     max-width: 320px;
+    margin-top: 50px;
   }
 
   .name-and-info {

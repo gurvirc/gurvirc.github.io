@@ -3,20 +3,22 @@
 /* ── FOOTER THEME TOKENS ── */
 /* Dark mode (default) */
 :root {
-    --footer-bg: #000000;
-    --footer-text: #886655;
-    --footer-link: #ffffff;
-    --footer-divider: #2a0808;
-    --footer-shadow: 0 -4px 20px rgba(200, 0, 0, 0.5);
-}
-
-/* Light mode — follows the same .light class your toggle adds */
-:root.light {
     --footer-bg: #ffffff;
     --footer-text: #7a5040;
     --footer-link: #1a0a06;
     --footer-divider: #e6d2c8;
     --footer-shadow: 0 -4px 20px rgba(200, 0, 0, 0.15);
+
+
+}
+
+/* Light mode — follows the same .light class your toggle adds */
+:root.light {
+    --footer-bg: #000000;
+    --footer-text: #886655;
+    --footer-link: #ffffff;
+    --footer-divider: #2a0808;
+    --footer-shadow: 0 -4px 20px rgba(200, 0, 0, 0.5);
 }
 
 /* ── FOOTER ── */

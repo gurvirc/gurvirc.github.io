@@ -31,8 +31,8 @@ export default function Header() {
                         {isDark ? '☼' : '❨'}
                     </button>
                     <Link to="/" className='nav-link'>Home</Link>
-                    <Link to="/about" className='nav-link'>About</Link>
-                    <Link to="/contact" className='nav-link'>Contact</Link>
+                    {/*<Link to="/about" className='nav-link'>About</Link>*/}
+                    {/*<Link to="/contact" className='nav-link'>Contact</Link>*/}
                 </nav>
             </nav>
         </header>
