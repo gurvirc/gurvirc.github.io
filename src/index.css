@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+/* ── DARK MODE (default) ── */
+:root {
+  --bg: #000000;
+  --bg-header: #000000;
+  --bg-card: linear-gradient(145deg, #0e0303, #160808);
+  --border-card: #2a0808;
+  --text-primary: #ffffff;
+  --text-muted: #886655;
+  --text-heading: #e8d8b0;
+  --accent: #cc2200;
+  --accent-bright: #ff2200;
+  --accent-dim: #7a0000;
+  --accent-border: #440a0a;
+  --shadow-header: 0 4px 20px rgba(200, 0, 0, 0.5);
+  --shadow-card: -4px 0 12px rgba(200, 0, 0, 0.3);
+  --heading-shadow:
+    0 0 8px rgba(200, 30, 0, 0.4),
+    0 2px 20px rgba(150, 20, 0, 0.2);
+  --particle-color: #ff3300;
+}
+
+/* ── LIGHT MODE ── */
+:root.light {
+  --bg: #ffffff;
+  --bg-header: #ffffff;
+  --bg-card: #ffffff;
+  --border-card: #c9a898;
+  --text-primary: #1a0a06;
+  --text-muted: #7a5040;
+  --text-heading: #4a1a0a;
+  --accent: #cc2200;
+  --accent-bright: #ff2200;
+  --accent-dim: #aa1800;
+  --accent-border: #cc2200;
+  --shadow-header: 0 4px 20px rgba(200, 0, 0, 0.2);
+  --shadow-card: -4px 0 12px rgba(200, 0, 0, 0.15);
+  --heading-shadow:
+    0 0 8px rgba(200, 30, 0, 0.2),
+    0 2px 20px rgba(150, 20, 0, 0.1);
+  --particle-color: #ff3300;
+}
+
+/* ── RESET ── */
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+
+  background-color: var(--bg);
+  transition: background-color 0.4s ease, color 0.4s ease;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* ── HEADER ── */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--bg-header);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--accent);
+  box-shadow: var(--shadow-header);
+  z-index: 2;
+  transition: background 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* ── LOGO ── */
+.logo {
+  font-family: 'Oswald', sans-serif;
+  color: var(--accent);
+  animation: flicker 5s infinite;
+}
+
+@keyframes flicker {
+
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 1px var(--accent-bright), 0 0 3px var(--accent-bright);
+    color: var(--accent);
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+    color: var(--accent-dim);
+  }
+}
+
+/* ── NAVBAR ── */
+.navbar {
+  margin-right: 30px;
+}
+
+.nav-link {
+  margin-right: 20px;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: color 0.5s;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: var(--accent);
+}
+
+/* ── THEME TOGGLE BUTTON ── */
+.theme-toggle {
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-size: 1.7rem;
+  padding: 5px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.5s ease;
+  line-height: 1;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+
+}
+
+.theme-toggle:hover {
+  cursor: pointer;
+  transform: scale(1.2)
+}
+
+
+
+/* ── HERO / BODY ── */
+.body {
+  display: flex;
+  margin-top: 170px;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-right: 250px;
+  position: relative;
+  background: transparent;
+  z-index: 1;
+}
+
+.body>img {
+  width: auto;
+  height: 30rem;
+}
+
+.name-and-info {
+  color: var(--text-primary);
+  padding-top: 100px;
+  background: transparent;
+  transition: color 0.4s ease;
+}
+
+.name-and-info>h1 {
+  margin-bottom: 0px;
+  background: transparent;
+}
+
+.name-and-info>h3 {
+  margin-top: 0px;
+  background: transparent;
+  color: var(--text-muted);
+}
+
+.name-and-info>p {
+  width: 30rem;
+  background: transparent;
+  color: var(--text-primary);
+}
+
+/* ── SOCIALS ── */
+.socials {
+  background: transparent;
+}
+
+.socials>a {
+  color: var(--text-primary);
+  font-size: 40px;
+  margin-right: 20px;
+  transition: color 0.5s;
+}
+
+.socials>a:hover {
+  color: var(--accent);
+}
+
+/* ── PROJECTS ── */
+.projects-page {
+  z-index: 1;
+  position: relative;
+  overflow: visible;
+  margin-top: 100px;
+}
+
+.projects-page>h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(2rem, 6vw, 4rem);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-heading);
+  text-shadow: var(--heading-shadow);
+  transition: color 0.4s ease;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+  overflow: visible;
+  color: var(--text-primary);
+}
+
+.project-card {
+  width: 20rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-left: 3px solid var(--accent);
+  box-shadow: var(--shadow-card);
+  padding: 10px;
+
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 0.75rem;
+}
+
+.project-card>p,
+.project-card h1 {
+  background: transparent;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.card-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-heading);
+  margin-bottom: 0.85rem;
+  transition: color 0.4s ease;
+}
+
+.card-desc {
+  font-family: 'Special Elite', cursive;
+  font-size: 0.88rem;
+  line-height: 1.85;
+  color: var(--text-muted);
+  transition: color 0.4s ease;
+}
+
+.tag {
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
+  padding: 0.2rem 0.65rem;
+  border-radius: 2px;
+  margin-right: 0.5rem;
+  background: transparent;
+}
+
+.tags {
+  background: transparent;
+}
+
+/* ── PARTICLES ── */
+#particles-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  background: var(--particle-color);
+  border-radius: 50%;
+  opacity: 0;
+  animation: float linear infinite;
+  box-shadow: 0 0 6px var(--particle-color), 0 0 12px var(--accent-bright);
+}
+
+/* ── CONTACT ── */
+.contact-header {
+  position: relative;
+  z-index: 1;
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(2rem, 6vw, 4rem);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-heading);
+  text-shadow: var(--heading-shadow);
+  transition: color 0.4s ease;
+}
+
+.posts {
+  display: flex;
+  justify-content: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  flex-wrap: wrap;
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+  color: black;
+  margin-top: 20px;
+
+
+  /* add this */
+}
+
+
+.img-wrapper>img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  object-position: center 10%;
+}
+
+.img-wrapper-snowboard>img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  object-position: center 60%;
+}
+
+.post-card {
+  border: 1px solid var(--border-card);
+  border-left: 3px solid var(--accent);
+  box-shadow: var(--shadow-card);
+  margin-top: 20px;
+  width: 25rem;
+  transition: transform 0.2s;
+  background: var(--bg-card);
+  color: var(--text-muted);
+}
+
+.post-card>h1 {
+  font-family: 'Oswald', sans-serif;
+  color: var(--text-heading);
+  font-size: 20px;
+  padding: 10px;
+}
+
+.post-card>p {
+  font-family: 'Special Elite', cursive;
+  font-size: 0.88rem;
+  line-height: 1.85;
+  padding: 10px;
+}
+
+.post-card:hover {
+  cursor: pointer;
+  background-color: rgb(222, 222, 222);
+  transform: scale(1.05);
+}
+
+
+
+
+.project-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 1.5rem;
+}
+
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.55rem 1.1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 2px;
+  background: transparent;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+.project-btn:hover {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 0 12px rgba(255, 34, 0, 0.5);
+  transform: translateY(-2px);
+}
+
+.project-btn.primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.project-btn.primary:hover {
+  background: var(--accent-bright);
+}
