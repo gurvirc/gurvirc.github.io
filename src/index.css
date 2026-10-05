@@ -74,6 +74,8 @@ header {
   transition: background 0.4s ease, box-shadow 0.4s ease;
 }
 
+
+
 /* ── LOGO ── */
 .logo {
   font-family: 'Oswald', sans-serif;
@@ -222,6 +224,8 @@ header {
 
 .projects {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   justify-content: space-between;
   overflow: visible;
   color: var(--text-primary);
@@ -361,6 +365,7 @@ header {
   transition: transform 0.2s;
   background: var(--bg-card);
   color: var(--text-muted);
+  text-decoration: none;
 }
 
 .post-card>h1 {
@@ -423,4 +428,102 @@ header {
 
 .project-btn.primary:hover {
   background: var(--accent-bright);
+}
+
+
+/* ── GLOBAL OVERFLOW FIX ── */
+html,
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ── PHONE / SMALL SCREENS ── */
+@media (max-width: 768px) {
+  body {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* Header: logo on top, links centered underneath */
+  header {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px 14px;
+    margin-right: 0;
+  }
+
+  .nav-link {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+
+  /* Hero: stack image and text */
+  .body {
+    flex-direction: row;
+    align-items: flex-start;
+
+    text-align: left;
+    margin: 170px 0 0;
+
+
+  }
+
+  .body>img {
+    height: auto;
+    width: 80%;
+    max-width: 320px;
+  }
+
+  .name-and-info {
+    padding-top: 20px;
+  }
+
+  .name-and-info>p {
+    width: 100%;
+  }
+
+  /* Projects: stack cards */
+  .projects {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  /* Posts */
+  .posts {
+    padding: 0;
+  }
+
+  .post-card {
+    width: 100%;
+  }
+
+  /* Blog post page */
+  .blog-post {
+    margin-top: 170px;
+  }
+
+  /* Footer: match the new body padding */
+  .footer {
+    margin-left: -16px;
+    margin-right: -16px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
